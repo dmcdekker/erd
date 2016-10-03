@@ -1,14 +1,37 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Erd</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang='en'>
+  <head>
+    
+    <%= stylesheet_link_tag "application", media: "all",
+                                           "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+    <%= render 'layouts/shim' %>
 
-<%= yield %>
+      <meta charset="utf-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+          <meta content="width=device-width, initial-scale=1" name="viewport">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta content="Website" name="description">
+              <meta content="D. Dekker" name="author">
+                <link href="../../favicon.ico" rel="icon"></link>
+                <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css"></link>
+                <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'></link>
+                </script>
+              </meta>
+            </meta>
+          </meta>
+        </meta>
+      </meta>
 
-</body>
+  </head>
+  <body>
+    <header>
+      <%= render 'layouts/header' %>
+    </header>  
+      <div class="body">
+        <%= yield %>
+      </div>
+  </body>
+  <%= render 'layouts/footer' %>
 </html>
