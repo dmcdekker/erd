@@ -68,6 +68,17 @@ div.navbar.navbar-fixed-left{
     background-color: white;
 }
 
+.nav > li > a:hover, .nav > li > a.dropdown-toggle:hover {
+    text-decoration: none;
+    background-color: white;
+
+}
+
+.nav > li > a:hover, .nav > li > a.dropdown-toggle:focus {
+    text-decoration: none;
+    background-color: white;
+}
+
 .navbar-fixed-left a{
   color: black;
   font-size: 1.27em;
