@@ -1,2 +1,17 @@
-<h1>StaticPages#about</h1>
-<p>Find me in app/views/static_pages/about.html.erb</p>
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <% provide(:title, "About") %>
+    <%= stylesheet_link_tag "static_pages", media: "all",
+                                           "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>                                       
+    <%= csrf_meta_tags %>
+    
+     
+  </head>
+  <body>
+    
+          <h1>About Eric</h1>
+       
+  </body>  
+</html> 

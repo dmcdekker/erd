@@ -7,17 +7,25 @@
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-
-  <div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-3 col-lg-2">
-      <nav class="navbar navbar-default navbar-fixed-side">
-        <!-- normal collapsible navbar markup -->
-      </nav>
+ <header>
+    <div class="navbar navbar navbar-fixed-left">
+       <logo class="navbar-brand">
+            <%= link_to "Eric Dekker", root_path %>
+                 </logo>
+      <ul class="nav navbar-nav">
+       <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Work<span class="caret"></span></a>
+         <ul class="dropdown-menu" role="menu">
+          <li><a href="/2D">2D</a></li>
+          <li><a href="/3D">3D</a></li>
+         </ul>
+       </li>
+       <li><%= link_to "About", about_path %></li>
+      </ul>
     </div>
-    <div class="col-sm-9 col-lg-10">
-      <!-- your page content -->
+    <div class="container">
+     <div class="row">
+       
+     </div>
     </div>
-  </div>
-</div>
+ <header>
 </html>
