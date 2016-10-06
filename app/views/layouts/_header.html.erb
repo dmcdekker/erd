@@ -1,30 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <%= stylesheet_link_tag "custom", media: "all" %>
-    <%= javascript_include_tag "application" %>
+    <%= stylesheet_link_tag "custom", media: "all"%>
+    <%= javascript_include_tag "application"%>
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
  <header>
-    <div class="navbar navbar navbar-fixed-left">
-       <logo class="navbar-brand">
-            <%= link_to "Eric Dekker", root_path %>
-                 </logo>
-      <ul class="nav navbar-nav">
-       <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Work<span class="caret"></span></a>
-         <ul class="dropdown-menu" role="menu">
-          <li><a href="/2D">2D</a></li>
-          <li><a href="/3D">3D</a></li>
-         </ul>
-       </li>
-       <li><%= link_to "About", about_path %></li>
-      </ul>
-    </div>
-    <div class="container">
-     <div class="row">
-       
+  <div class="wrapper"> 
+   <div class="col-xs-2 col-med-3 left">
+    <div class="navbar navbar navbar-fixed-left" role="navigation">
+       <logo>
+          <%= link_to "Eric Dekker", root_path %></logo>
+          <ul class="nav navbar-nav">
+             <li><%= link_to "Work", work_path %></li>
+             <li><%= link_to "About", about_path %></li>
+          </ul>
+      </div>
      </div>
-    </div>
+    </div> 
  <header>
 </html>
+
