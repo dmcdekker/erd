@@ -29,54 +29,26 @@ p {
 /*Navbar*/
 
 
-div.navbar.navbar-default.navbar-fixed-left{
-  margin-right: 5px;
-  display: block;
-  margin-top: 30px;
-  width: 15%;
-  position: fixed;
-  border-box: none;
-  background-color: white;
-  text-align: left;
+#wrapper {
+  padding-left: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+div#sidebar-wrapper{
+  width: 20%;
 } 
 
-.navbar-fixed-left .navbar-nav > li {
-  float: none;  /* Cancel default li float: left */
-  width: 17%;
-}
-
-.navbar-fixed-left + .container {
-  padding-left: 160px;
-}
-
-/* On using dropdown menu (To right shift popuped) */
-.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
-  margin-top: -50px;
-  margin-left: 140px;
-}
-
-
-
-.nav > li > a:hover, .nav > li > a:hover {
-    text-decoration: none;
-    background-color: white;
-}
-
-.nav > li > a:hover, .nav > li > a:focus {
-    text-decoration: none;
-    background-color: white;
-}
-
-.navbar-fixed-left a{
-  color: #737373;
-  font-size: 1.6em;
-  text-decoration: none;
-  padding-left: 0px;
-  text-align: left;
-}
-
-#logo{
-  
+#sidebar-wrapper {
+  width: 20%;
+  margin-left: -250px;
+  left: 250px;
+  width: 250px;
+  background: #fff;
+  position: fixed;
+  height: 50%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
 }
 
 
