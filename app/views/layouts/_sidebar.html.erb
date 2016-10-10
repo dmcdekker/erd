@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= stylesheet_link_tag "custom", media: "all"%>
+    <%= javascript_include_tag "application"%>
+    <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+ <header class="col-md-2 navbar navbar navbar-fixed-left">
+  <div class="container-nav">
+    <%= link_to "sample app", '#', id: "logo" %>
+    <nav>
+      <ul class="sidebar-nav">
+        <li><%= link_to "Home",   '#' %></li>
+        <li><%= link_to "Help",   '#' %></li>
+        <li><%= link_to "Log in", '#' %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+</html>
+
+

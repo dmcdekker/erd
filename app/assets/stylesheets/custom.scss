@@ -28,31 +28,21 @@ p {
 
 /*Navbar*/
 
-
-#wrapper {
-  padding-left: 250px;
-  transition: all 0.4s ease 0s;
+#div.container-nav{
+  width: 25%;
+  margin: 5px;
+  margin-right: 5px;
 }
 
-div#sidebar-wrapper{
-  width: 20%;
-} 
-
-#sidebar-wrapper {
-  width: 20%;
-  margin-left: -250px;
-  left: 250px;
-  width: 250px;
-  background: #fff;
-  position: fixed;
-  height: 50%;
-  overflow-y: auto;
-  z-index: 1000;
-  transition: all 0.4s ease 0s;
+header.navbar.navbar-fixed-left{
+  width: 25%;
+  margin-right: 0px;
 }
 
-
-
+ul.sidebar-nav{
+  width: 20%;
+  margin-right: 5px;
+}
 
 @media screen and (max-width: 767px) {
     body {
