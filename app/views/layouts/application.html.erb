@@ -26,13 +26,14 @@
 
   </head>
   <body>
-   
-      <%= render 'layouts/sidebar'%>
-      <div class="container">
+    <header>
+      <%= render 'layouts/sidebar' %>
+    </header>  
+      <div class="body">
         <%= yield %>
       </div>
   </body>
-  <%= render 'layouts/footer' %>
+  
 </html>
 
 
