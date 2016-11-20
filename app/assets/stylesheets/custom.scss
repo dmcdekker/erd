@@ -39,6 +39,16 @@ navbar-fixed-side navbar-fixed-side{
   margin-right: 0px;
 }
 
+logo.navbar-brand a{
+  font-size: 25px;
+  text-decoration: none;
+  color: #777;
+}
+
+logo.navbar-brand a:hover { 
+    color: white;
+}
+
 ul.sidebar-nav{
   width: 20%;
   margin-right: 5px;

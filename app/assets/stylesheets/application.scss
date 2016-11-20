@@ -5,17 +5,20 @@
 /*Application*/
 
 html, body{
-    margin: 5%;
+    margin: 3%;
+   
 }
 
 body, html {
   font-size: 17px;
   line-height: 20px;
-  padding-top: 60px;
   padding-bottom: 60px;
-  margin: 10px;
+  margin: 1%;
 }
 
+div.body{
+     margin-top: 3%;    
+}
 
 
 @media screen and (max-width: 767px) {

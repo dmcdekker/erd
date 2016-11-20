@@ -3,6 +3,9 @@
 
 body,html,.row-offcanvas {
   height:100%;
+  width:95%;
+  margin-left: 2%;
+  margin-right: -2%;
 }
 
 body {
@@ -18,19 +21,40 @@ div.well{
 
 #sidebar {
   width: inherit;
-  min-width: 220px;
-  max-width: 220px;
-  
+  min-width: 200px;
+  max-width: 200px;
+  background-color: transparent;
   float: left;
   height:100%;
   position:relative;
   overflow-y:auto;
   overflow-x:hidden;
+  text-align: center;
 }
-#main {
+
+a {
+    color: #777;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+}
+
+div#main {
+  margin: 0px;
   height:100%;
   overflow:auto;
   height: 100av;
+}
+
+div.row-offcanvas row-offcanvas-left{
+  width :95%;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 /*
@@ -43,12 +67,12 @@ div.well{
     -webkit-transition: all 0.25s ease-out;
     -moz-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
-    width:calc(100% + 220px);
+    width:calc(100% + 200px);
   }
     
   .row-offcanvas-left
   {
-    left: -220px;
+    left: -200px;
   }
 
   .row-offcanvas-left.active {
