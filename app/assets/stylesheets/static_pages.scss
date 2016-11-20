@@ -6,10 +6,16 @@ body,html,.row-offcanvas {
   width:95%;
   margin-left: 2%;
   margin-right: -2%;
+  float:center;
 }
 
 body {
   padding-top: 50px;
+}
+
+div.col-lg-10.col-md-8.col-sm-12{
+  width:100%;
+  height:100%;
 }
 
 div.well{
@@ -48,11 +54,11 @@ div#main {
   margin: 0px;
   height:100%;
   overflow:auto;
-  height: 100av;
+  
 }
 
 div.row-offcanvas row-offcanvas-left{
-  width :95%;
+  width: 95%;
   margin-left:auto;
   margin-right:auto;
 }
